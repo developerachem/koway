@@ -1058,7 +1058,7 @@ body {
     scroll-behavior: smooth;
 }
 
-.tap-to-top {
+#topBtn {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -1071,6 +1071,9 @@ body {
     text-align: center;
     overflow: hidden;
     animation: up-and-down ease-in-out 6s infinite;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
 }
 
 .tap-to-top:hover {
@@ -1099,4 +1102,9 @@ body {
     height: 100%;
     bottom: 0;
     top: auto;
+}
+
+#topBtn.show{
+    opacity: 1;
+    visibility: visible;
 }
